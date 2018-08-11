@@ -1,13 +1,13 @@
 ## Functional Programming
 
->DevGrid
+![DevGrid](/assets/devgrid.png)
 >Leonardo
 
 ---
 
 ### There isn't a single definition
 
->Is more like a coding style besides language features
+>Is more like a coding style
 
 ---
 
@@ -16,9 +16,9 @@
 
 ---
 
-### Is definetely a old thing.
+### Is a old thing.
 
-> Why it is becoming more popular?
+> Why it is becoming more popular now?
 
 ---
 
@@ -142,9 +142,15 @@
     default: return state;
   }
 ```
+---
+
+### Difference between paradigms
+
+> Functional programming languages encourages you to act functional
 
 ---
 
-### Thank you
+### Thank you!
+![DevGrid](/assets/devgrid.png)
 
 ---
