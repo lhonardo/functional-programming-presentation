@@ -1,8 +1,7 @@
 ## Functional Programming
 
-> Leonardo
-
-> DevGrid
+#### Leonardo
+#### DevGrid
 ---
 
 ### There isn't a single definition
