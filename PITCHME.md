@@ -78,7 +78,13 @@
 ### Immutability
 
 > It allows for a thread to act on data represented by immutable objects without worrying what other threads are up to.
+
 > In short: immutable objects are more thread-safe than mutable objects.
+
+---
+### Programming with shared mutable state
+
+[![video](http://img.youtube.com/vi/peOk3W7KZ4o/0.jpg)](http://www.youtube.com/watch?v=peOk3W7KZ4o)
 
 ---
 
@@ -123,24 +129,21 @@
 > Time traveling debug is only possible because immutability
 
 ```javascript
-  export default (state = INITIAL_STATE, { type, payload }) => {
-    switch (type) {
-      case types.NOTES_UPDATED:
-        return {
-          ...state,
-          notes: [payload, ...state.notes]
-        }
-      case types.NOTE_DELETED:
-       const { notes } = state;
-       const elementToRemove = notes.find(n => n.key === payload.key);
-       notes.splice(notes.indexOf(elementToRemove), 1);
-        return {
-          ...state,
-          notes: [...notes],
-        }
-      default: return state;
-    }
-  };
+  switch (type) {
+    case types.NOTES_UPDATED:
+      return {
+        ...state,
+        notes: [payload, ...state.notes]
+      }
+    case types.NOTE_DELETED:
+     const elementToRemove = notes.find(n => n.key === payload.key);
+     notes.splice(notes.indexOf(elementToRemove), 1);
+      return {
+        ...state,
+        notes: [...notes],
+      }
+    default: return state;
+  }
 ```
 
 ---
