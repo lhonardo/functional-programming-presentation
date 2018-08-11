@@ -1,8 +1,8 @@
 ## Functional Programming
 
-![DevGrid](/assets/devgrid.png)
 >Leonardo
 
+>DevGrid
 ---
 
 ### There isn't a single definition
@@ -151,6 +151,5 @@
 ---
 
 ### Thank you!
-![DevGrid](/assets/devgrid.png)
 
 ---
