@@ -51,6 +51,7 @@
 #### (Herb Sutter - 2005)
 
 > "Concurrency is the next major revolution in how we write software"
+
 > Stated that microprocessor serial-processing speed is reaching a physical limit, which leads to two main consequences:
 
 ---
