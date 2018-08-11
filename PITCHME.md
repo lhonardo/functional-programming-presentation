@@ -1,13 +1,13 @@
 ## Functional Programming
 
->Leonardo
+> Leonardo
 
->DevGrid
+> DevGrid
 ---
 
 ### There isn't a single definition
 
->Is more like a coding style
+> Is more like a coding style
 
 ---
 
