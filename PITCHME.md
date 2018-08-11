@@ -1,7 +1,7 @@
 ## Functional Programming
 
 >DevGrid
->leonardo()
+>Leonardo
 
 ---
 
@@ -10,7 +10,7 @@
 >Is more like a coding style besides language features
 
 
-### Why are we talking about functional programming now?
+##### Why are we talking about functional programming now?
 
 ---
 
@@ -84,7 +84,7 @@
 ---
 ### Programming with shared mutable state
 
-[![video](http://img.youtube.com/vi/peOk3W7KZ4o/0.jpg)](http://www.youtube.com/watch?v=peOk3W7KZ4o)
+[![video](http://img.youtube.com/vi/6YeomFAlgWg/0.jpg)](http://www.youtube.com/watch?v=6YeomFAlgWg)
 
 ---
 
