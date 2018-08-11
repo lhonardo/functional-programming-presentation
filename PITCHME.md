@@ -101,6 +101,7 @@
 
 ### React and Redux
 > React dumb components are pure function
+
 ```javascript
   Import React from 'react';
   const dumbComponent = (props) => {
