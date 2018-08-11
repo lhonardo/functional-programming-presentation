@@ -30,15 +30,15 @@
 
 ### Is definetely a old thing.
 
-> Why we only talking about it on the last years?
+> Why it is becoming more popular?
 
 ---
 
 ### In general, is slow
 
-* Is less efficient that a mutable way, like C or Java
-* The computers used to be less powerful
-* The preference was to a coding style that is more friendly with computer resources
+* Is less efficient than a mutable way, like C or Java
+* In the past, computers hardwares used to be less powerful
+* The preference was to a paradigm more friendly to limited computer resources
 
 ---
 
@@ -50,6 +50,7 @@
 ### The free lunch is over
 #### (Herb Sutter - 2005)
 
+> "Concurrency is the next major revolution in how we write software"
 > Stated that microprocessor serial-processing speed is reaching a physical limit, which leads to two main consequences:
 
 ---
