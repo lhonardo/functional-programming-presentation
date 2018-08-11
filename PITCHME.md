@@ -9,9 +9,6 @@
 
 >Is more like a coding style besides language features
 
-
-##### Why are we talking about functional programming now?
-
 ---
 
 ### Most popular functional p.l.
