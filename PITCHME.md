@@ -77,7 +77,8 @@
 
 ### Immutability
 
-> Never change your state, always return a new one
+> It allows for a thread to act on data represented by immutable objects without worrying what other threads are up to.
+> In short: immutable objects are more thread-safe than mutable objects.
 
 ---
 
@@ -99,16 +100,16 @@
 
 ---
 
-### React and Redux
+### React
 > React dumb components are pure function
 
 ```javascript
   Import React from 'react';
   const dumbComponent = (props) => {
     return (
-      <div> // would use <React.fragment> here
+      <div>
         <h1>Dumb Component</h1>
-        <h2>I am dumb, but I afm pure</h2>
+        <h2>I am dumb, but I am pure</h2>
         <p> { props.text } </p>
       </div>
     )
@@ -118,7 +119,32 @@
 
 ---
 
-##### Reducers (free monad)
->
+### Redux
+> Time traveling debug is only possible because immutability
+
+```javascript
+  export default (state = INITIAL_STATE, { type, payload }) => {
+    switch (type) {
+      case types.NOTES_UPDATED:
+        return {
+          ...state,
+          notes: [payload, ...state.notes]
+        }
+      case types.NOTE_DELETED:
+       const { notes } = state;
+       const elementToRemove = notes.find(n => n.key === payload.key);
+       notes.splice(notes.indexOf(elementToRemove), 1);
+        return {
+          ...state,
+          notes: [...notes],
+        }
+      default: return state;
+    }
+  };
+```
+
+---
+
+### Thank you
 
 ---
