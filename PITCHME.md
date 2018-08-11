@@ -9,15 +9,6 @@
 
 >Is more like a coding style besides language features
 
----
-
-### 3 basic concepts
-
-* Immutability
-* First Class Function
-* Oriented a values, not names
-
----
 
 ### Why are we talking about functional programming now?
 
@@ -63,14 +54,12 @@
 
 ---
 
-###### Why?!
 ### Most popular functional p.l.
 ![PL](/assets/functional_lg.jpg)
 
 ---
 
 ### Vertical scaling
-### How we increase the efficiency of a software to have a less waste the hardware resources?
 
 * Using the principles of functional programming
 * Functional programming languages offers better tools to work with concurrency
@@ -78,24 +67,55 @@
 
 ---
 
-### 3 basic concepts
+### Concepts
 
 * Immutability
-* First Class Function
-* Oriented to values, not variables
+* Pure functions
+* Closure
 
 ---
 
-### Closure
+### Immutability
+
+> Never change your state, always return a new one
+
+---
+
+### Pure functions
+
+> A function that has NO side effects
+
+```javascript
+  function sum(a, b) {
+    launchNuclearRocket(); // <-- side effect
+    return a + b;
+  };
+```
+---
+
+### Closure in javascript
 
 > Code
 
+---
 
-###### Javascript
+### React and Redux
+> React dumb components are pure function
+```javascript
+  Import React from 'react';
+  const dumbComponent = (props) => {
+    return (
+      <div> // would use <React.fragment> here
+        <h1>Dumb Component</h1>
+        <h2>I am dumb, but I afm pure</h2>
+        <p> { props.text } </p>
+      </div>
+    )
+  };
+  export default dumbComponent;
+```
 
-#### React and Redux
-##### React
->
+---
 
 ##### Reducers (free monad)
 >
